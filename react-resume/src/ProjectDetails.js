@@ -1,7 +1,7 @@
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from './useFetch';
 
-const BlogProject = () => {
+const ProjectDetails = () => {
     const {id} = useParams();
     const {data: project, error, isPending} = useFetch('http://localhost:8000/blogs/'+id)
     const history = useHistory();
@@ -19,7 +19,7 @@ const BlogProject = () => {
         <div className ="blog-details">
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
-            {blog && (
+            {project && (
                 <article>
                     <h2>{project.title}</h2>
                     <p>Written by {project.author}</p>

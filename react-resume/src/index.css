@@ -45,6 +45,16 @@ p{
   margin: 40px auto;
   padding: 20px;
 }
+/*home bio*/
+.home-bio{
+  text-align: center;
+}
+.home-bio h2{
+  text-align: left;
+  padding-top: 20px;
+}
+
+
 /*blog preview*/
 .blog-preview{
   padding: 10px 16px;

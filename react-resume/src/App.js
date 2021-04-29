@@ -1,8 +1,10 @@
 import NavBar from './NavBar';
 import Home from './Home';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-//import Create from './Create';
+import HiddenAdd from './HiddenAdd';
 import ProjectDetails from './ProjectDetails';
+import NotFound from './NotFound';
+import Projects from './Projects';
 
   
 function App() {
@@ -15,8 +17,17 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/project/:id">
+            <Route path="/HiddenAdd">
+              <HiddenAdd />
+            </Route>
+            <Route path="/Projects">
+              <Projects />
+            </Route>
+            <Route path="/blogs/:id">
               <ProjectDetails />
+            </Route>
+            <Route path="*"> 
+              <NotFound />
             </Route>
           </Switch>
         </div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-const BlogList = ({blogs,title}) => {
+const ProjectList = ({blogs,title}) => {
+
     return (
         <div className = "blog-list">
             <h2>{title}</h2>
@@ -16,4 +17,5 @@ const BlogList = ({blogs,title}) => {
     );
 }
  
-export default BlogList;
+export default ProjectList;
+//npx json-server --watch data/db.json --port 8000

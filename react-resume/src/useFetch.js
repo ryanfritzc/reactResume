@@ -11,7 +11,6 @@ const useFetch = (url) =>{
 
 
         setTimeout(() => {                                                        
-            //fetch('http://localhost:8000/blogs')                  video 20
             fetch(url, {signal: abortCont.signal})
             .then(res => {
                 if(!res.ok){

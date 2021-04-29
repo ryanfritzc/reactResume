@@ -15,18 +15,27 @@ p{
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
 }
 .navbar h1{
   color: red;
+  padding-right: 2em;
+  font-size: 60px;
+}
+.navbar p{
+  padding-right: 4em;
+  color: black;
 }
 .navbar .links{
   margin-left: auto;
+  
 }
 .navbar a{
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: blue;
+  padding-left: 2em;
 }
 .navbar a:hover{
   color: red;

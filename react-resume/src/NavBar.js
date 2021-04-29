@@ -4,10 +4,11 @@ const NavBar = () => {
     return ( 
         <nav className="navbar">
             <h1>Ryan Fritz</h1>
-            <h2>ryanfritzc@gmail.com|(919)426-8030</h2>
+            <p>ryanfritzc@gmail.com</p>
+            <p>(919)426-8030</p>
             <div className="navLinks">
                 <Link to="/">Home</Link>
-                <Link to="/ProjectList">Projects</Link>
+                <Link to="/Projects">Projects</Link>
             </div>
         </nav>
     );

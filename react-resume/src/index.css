@@ -125,6 +125,15 @@ p{
 .blog-details p{
   color: #ddd;
 }
+.blog-details a{
+  text-decoration: none;
+  background: #D43f3f;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 /*create new blog form*/
 .create{

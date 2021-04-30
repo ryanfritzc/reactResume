@@ -22,9 +22,10 @@ const ProjectDetails = () => {
             {blog && (
                 <article>
                     <h2>{blog.title}</h2>
-                    <p>GitHub account: {blog.author}</p>
+                    <p>Project: {blog.author}</p>
                     <div>{blog.body}</div>
-                    <button onClick={handleClick}>Delete</button>
+                    <button><a href={blog.links} target="_blank">Link to project</a></button>
+                    <button onClick={handleClick} >Delete</button>
                 </article>
             )}
         </div>

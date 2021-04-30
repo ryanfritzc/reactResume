@@ -5,12 +5,13 @@ const HiddenAdd = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Personal');
+    const [links, setLinks] = useState('')
     const[isPending, setIsPending] = useState(false);
     const history = useHistory();
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {title, body, author};
+        const blog = {title, body, author, links};
 
         setIsPending(true);
 
@@ -30,12 +31,19 @@ const HiddenAdd = () => {
         <div className="create">
             <h2>Create a new blog</h2>  
             <form onSubmit={handleSubmit}>
-                <label>Project title:</label>
+                <label>Project Title:</label>
                 <input
                     type="text"
                     required
                     value = {title}
                     onChange = {(e) => setTitle(e.target.value)}
+                />
+                <label>Project Link:</label>
+                <input
+                    type="url"
+                    required
+                    value={links}
+                    onChange = {(e) => setLinks(e.target.value)}
                 />
                 <label>Project Description:</label>
                 <textarea

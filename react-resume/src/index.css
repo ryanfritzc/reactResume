@@ -20,7 +20,7 @@ p{
   border-bottom: 2px solid #f2f2f2;
 }
 .navbar h1{
-  color: red;
+  color:#D43f3f;
   padding-right: 2em;
   font-size: 60px;
 }
@@ -36,11 +36,11 @@ p{
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
-  color: blue;
+  color: #5db5fe;
   padding-left: 2em;
 }
 .navbar a:hover{
-  color: red;
+  color: #D43f3f;
 }
 .content{
   max-width: 600px;
@@ -63,7 +63,7 @@ p{
 }
 .home-bio a {
   text-decoration: none;
-  color: blue;
+  color: #5db5fe;
 }
 
 /*blog preview*/
@@ -79,7 +79,7 @@ p{
 }
 .blog-preview h2{
   font-size: 25px;
-  color: #ddd;
+  color: #5db5fe;
   margin-bottom: 8px;
 }
 .blog-preview a{
@@ -87,28 +87,34 @@ p{
   color:#ddd;
 }
 #blog-list-h2{
-  color:red;
+  color:#D43f3f;
   font-size: 40px;
+}
+.blog-preview p{
+  color:#ddd;
 }
 
 /*Blog details page*/
 .blog-details h2{
-  color: red;
+  color: #5db5fe;
   font-size: 20px;
   margin-bottom: 10px;
 }
 .blog-details div{
-  color: black;
+  color: #ddd;
   font-weight: bold;
   margin: 20px 0;
 }
 .blog-details button{
-  background: red;
+  background: #D43f3f;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.blog-details p{
+  color: #ddd;
 }
 
 /*create new blog form*/
@@ -123,7 +129,7 @@ p{
 }
 .create h2{
   font-size: 20px;
-  color: red;
+  color: #D43f3f;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select{
@@ -135,7 +141,7 @@ p{
   display: block;
 } 
 .create button{
-  background: red;
+  background:#D43f3f;
   color: #fff;
   border: 0;
   padding: 8px;

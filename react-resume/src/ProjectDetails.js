@@ -22,7 +22,7 @@ const ProjectDetails = () => {
             {blog && (
                 <article>
                     <h2>{blog.title}</h2>
-                    <p>Written by {blog.author}</p>
+                    <p>GitHub account: {blog.author}</p>
                     <div>{blog.body}</div>
                     <button onClick={handleClick}>Delete</button>
                 </article>

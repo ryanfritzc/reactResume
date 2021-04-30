@@ -89,11 +89,20 @@ p{
 #blog-list-h2{
   color:#D43f3f;
   font-size: 40px;
+  padding-top: 70px;
 }
 .blog-preview p{
   color:#ddd;
 }
-
+.reference{
+  text-align: center;
+  padding-top: 15px;
+}
+.reference a{
+  color: #5db5fe;
+  text-decoration: underline;
+  
+}
 /*Blog details page*/
 .blog-details h2{
   color: #5db5fe;

@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom"
 const HiddenAdd = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('ryan');
+    const [author, setAuthor] = useState('Personal');
     const[isPending, setIsPending] = useState(false);
     const history = useHistory();
     
@@ -30,29 +30,29 @@ const HiddenAdd = () => {
         <div className="create">
             <h2>Create a new blog</h2>  
             <form onSubmit={handleSubmit}>
-                <label>Blog title:</label>
+                <label>Project title:</label>
                 <input
                     type="text"
                     required
                     value = {title}
                     onChange = {(e) => setTitle(e.target.value)}
                 />
-                <label>Blog body:</label>
+                <label>Project Description:</label>
                 <textarea
                     required
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
-                <label>Blog author:</label>
+                <label>Which GitHub:</label>
                 <select
                     value={author}
                     onChange = {(e) => setAuthor(e.target.value)}
                 >
-                    <option value="ryan">ryan</option>
-                    <option value="fritz">fritz</option>
+                    <option value="Personal">Personal</option>
+                    <option value="School">School</option>
                 </select>
                 {!isPending && <button>Add blog</button>}
-                {isPending && <button disabled>Adding blog...</button>}
+                {isPending && <button>Adding blog...</button>}
             </form>              
         </div>
     );

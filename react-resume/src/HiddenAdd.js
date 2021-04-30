@@ -21,7 +21,7 @@ const HiddenAdd = () => {
         }).then(() =>{
             console.log('new blog added');
             setIsPending(false);
-            history.push('/')
+            history.push('./Projects')
         });
 
     }

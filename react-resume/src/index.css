@@ -3,6 +3,8 @@
 *{
   margin: 0;
   font-family: "Roboto";
+  background-color: #1d2226;
+  color: #ddd;
   
 }
 p{
@@ -24,7 +26,7 @@ p{
 }
 .navbar p{
   padding-right: 4em;
-  color: black;
+  color: #ddd;
 }
 .navbar .links{
   margin-left: auto;
@@ -45,6 +47,7 @@ p{
   margin: 40px auto;
   padding: 20px;
 }
+
 /*home bio*/
 .home-bio{
   text-align: center;
@@ -52,25 +55,40 @@ p{
 .home-bio h2{
   text-align: left;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
-
+.home-bio li{
+  text-align: left;
+  padding-bottom: 10px;
+}
+.home-bio a {
+  text-decoration: none;
+  color: blue;
+}
 
 /*blog preview*/
 .blog-preview{
   padding: 10px 16px;
+  padding-top: 15px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #ddd;
+
 }
 .blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.1);
 }
 .blog-preview h2{
-  font-size: 20px;
-  color: red;
+  font-size: 25px;
+  color: #ddd;
   margin-bottom: 8px;
 }
 .blog-preview a{
   text-decoration: none;
+  color:#ddd;
+}
+#blog-list-h2{
+  color:red;
+  font-size: 40px;
 }
 
 /*Blog details page*/

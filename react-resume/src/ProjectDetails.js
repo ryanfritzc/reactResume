@@ -25,7 +25,7 @@ const ProjectDetails = () => {
                     <p>Project: {blog.author}</p>
                     <div>{blog.body}</div>
                     <button><a href={blog.links} target="_blank">Link to project</a></button>
-                    <button onClick={handleClick} >Delete</button>
+                    <button onClick={handleClick} hidden>Delete</button>
                 </article>
             )}
         </div>

@@ -8,8 +8,7 @@ const useFetch = (url) =>{
 
     useEffect(() => {
         const abortCont = new AbortController();
-
-        setTimeout(() => {   
+ 
             fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
             //fetch(url, {signal: abortCont.signal})
             .then(response => {
@@ -32,7 +31,7 @@ const useFetch = (url) =>{
                     setError(err.message);
                 }
             })                                                                          
-        }, 1000000)
+        
         /*setTimeout(() => {   
             fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
             //fetch(url, {signal: abortCont.signal})

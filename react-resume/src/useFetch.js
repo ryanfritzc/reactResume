@@ -32,7 +32,31 @@ const useFetch = (url) =>{
                     setError(err.message);
                 }
             })                                                                          
-        }, 10000)
+        }, 1000000)
+        /*setTimeout(() => {   
+            fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
+            //fetch(url, {signal: abortCont.signal})
+            .then(response => {
+                if(!response.ok){
+                    throw Error('Could not fetch the data for that resource');
+                }
+                return response.json();
+                //return console.log("working");
+            })
+            .then(data => {
+                setData(data);
+                setIsPending(false);
+                setError(null);
+            })
+            .catch(err=> {
+                if (err.name === 'AbortError'){
+                    console.log('fetch aborted')
+                }else{
+                    setIsPending(false);
+                    setError(err.message);
+                }
+            })                                                                          
+        }, 10000)*/
 
         return () => abortCont.abort();
     },  [url]);

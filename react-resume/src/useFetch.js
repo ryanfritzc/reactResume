@@ -10,7 +10,7 @@ const useFetch = (url) =>{
         const abortCont = new AbortController();
 
         setTimeout(() => {   
-            fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/db')                                                     
+            fetch('./db.json')                                                     
             //fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){

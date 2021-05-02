@@ -17,7 +17,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/reactResume">
+            <Route path="/reactResume">
               <Home />
             </Route>
             <Route path="/HiddenAdd">

@@ -3,11 +3,11 @@ import useFetch from './useFetch';
 
 const ProjectDetails = () => {
     const {id} = useParams();
-    const {data: blog, error, isPending} = useFetch('db.json'+id)
+    const {data: blog, error, isPending} = useFetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/db'+id)
     const history = useHistory();
     
     const handleClick = () =>{
-        fetch('db.json' + blog.id, {
+        fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/db' + blog.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/Projects');

@@ -10,8 +10,8 @@ const useFetch = (url) =>{
         const abortCont = new AbortController();
 
         setTimeout(() => {   
-            fetch('./db.json')                                                     
-            //fetch(url, {signal: abortCont.signal})
+            //fetch('./db.json')                                                     
+            fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){
                     throw Error('Could not fetch the data for that resource');

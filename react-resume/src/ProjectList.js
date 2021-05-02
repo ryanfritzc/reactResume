@@ -18,4 +18,3 @@ const ProjectList = ({blogs,title}) => {
 }
  
 export default ProjectList;
-//npx json-server --watch data/db.json --port 8000

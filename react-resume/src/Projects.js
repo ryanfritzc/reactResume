@@ -2,7 +2,7 @@ import ProjectList from './ProjectList';
 import useFetch from './useFetch';
 
 const Projects = () => {
-        const {data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
+        const {data: blogs, isPending, error} = useFetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/db');
     return ( 
         <div className="home">
             {error && <div>{error}</div>}

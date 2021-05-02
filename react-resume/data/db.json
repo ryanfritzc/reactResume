@@ -1,5 +1,5 @@
 {
-  "blogs": [
+  "blogs":[
     {
       "title": "JavAttack",
       "body": "This project is for my capstone course (4155) at UNCC. This was done in the Express Framework and is a simple coding game to help children and those inexperienced in any programming learn the Java programming language. Out of our group of 5, only one of us knew the framework well enough to get things start (not myself) and helped the rest of the group while they learned for themselves the basics and functionality of the framework. THIS IS CURRENTLY BEING DEVELOPED AND WILL BE UPDATED",

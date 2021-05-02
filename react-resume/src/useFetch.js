@@ -9,8 +9,9 @@ const useFetch = (url) =>{
     useEffect(() => {
         const abortCont = new AbortController();
 
-        setTimeout(() => {                                                        
-            fetch(url, {signal: abortCont.signal})
+        setTimeout(() => {   
+            fetch('db.sjon')                                                     
+            //fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){
                     throw Error('Could not fetch the data for that resource');

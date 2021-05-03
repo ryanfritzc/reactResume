@@ -7,7 +7,7 @@ const NavBar = () => {
             <p>ryanfritzc@gmail.com</p>
             <p>(919)426-8030</p>
             <div className="navLinks">
-                <Link to="/reactResume/">Home</Link>
+                <Link to="/reactResume">Home</Link>
                 <Link to="/Projects">Projects</Link>
             </div>
         </nav>

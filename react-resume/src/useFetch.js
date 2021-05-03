@@ -3,14 +3,14 @@ import {useState, useEffect} from 'react'
 const useFetch = (url) =>{
     const [data, setData] = useState(null);
     const [isPending, setIsPending]= useState(true);
-    const [error, setError] =useState(null);
+    const [error, setError] = useState(null);
 
 
     useEffect(() => {
         const abortCont = new AbortController();
  
-            fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
-            //fetch(url, {signal: abortCont.signal})
+            //fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
+            fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){
                     throw Error('Could not fetch the data for that resource');

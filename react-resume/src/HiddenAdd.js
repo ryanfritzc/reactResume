@@ -15,7 +15,7 @@ const HiddenAdd = () => {
 
         setIsPending(true);
 
-        fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs', {
+        fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs/', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(blog)

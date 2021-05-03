@@ -1,4 +1,5 @@
 import { useHistory, useParams } from "react-router-dom";
+import { blogs } from "./JsonData";
 import useFetch from './useFetch';
 
 const ProjectDetails = () => {

@@ -14,7 +14,7 @@ function App() {
         <NavBar />
         <div className="content">
           <Switch>
-            <Route exact path="https://ryanfritzc.github.io/reactResume/">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route exact path="https://ryanfritzc.github.io/reactResume/">

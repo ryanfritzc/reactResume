@@ -14,10 +14,10 @@ function App() {
         <NavBar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="https://ryanfritzc.github.io/reactResume/">
               <Home />
             </Route>
-            <Route exact path="ryanfritzc.github.io/reactResume/">
+            <Route exact path="https://ryanfritzc.github.io/reactResume/">
               <Home />
             </Route>
             <Route path="/HiddenAdd">

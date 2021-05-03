@@ -9,7 +9,7 @@ const useFetch = (url) =>{
     useEffect(() => {
         const abortCont = new AbortController();
  
-            //fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
+        /*                                                    
             fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){
@@ -30,9 +30,9 @@ const useFetch = (url) =>{
                     setIsPending(false);
                     setError(err.message);
                 }
-            })                                                                          
+            })  */                                                                        
         
-        /*setTimeout(() => {   
+        setTimeout(() => {   
             fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
             //fetch(url, {signal: abortCont.signal})
             .then(response => {
@@ -55,7 +55,7 @@ const useFetch = (url) =>{
                     setError(err.message);
                 }
             })                                                                          
-        }, 10000)*/
+        }, 1000000000)
 
         return () => abortCont.abort();
     },  [url]);

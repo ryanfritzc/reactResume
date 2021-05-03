@@ -9,7 +9,7 @@ const useFetch = (url) =>{
     useEffect(() => {
         const abortCont = new AbortController();
  
-        /*                                                    
+        setTimeout(() => {                                                 
             fetch(url, {signal: abortCont.signal})
             .then(response => {
                 if(!response.ok){
@@ -30,32 +30,8 @@ const useFetch = (url) =>{
                     setIsPending(false);
                     setError(err.message);
                 }
-            })  */                                                                        
-        
-        setTimeout(() => {   
-            fetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs')                                                     
-            //fetch(url, {signal: abortCont.signal})
-            .then(response => {
-                if(!response.ok){
-                    throw Error('Could not fetch the data for that resource');
-                }
-                return response.json();
-                //return console.log("working");
-            })
-            .then(data => {
-                setData(data);
-                setIsPending(false);
-                setError(null);
-            })
-            .catch(err=> {
-                if (err.name === 'AbortError'){
-                    console.log('fetch aborted')
-                }else{
-                    setIsPending(false);
-                    setError(err.message);
-                }
-            })                                                                          
-        }, 1000000000)
+            })  
+        }, 1000)                                                                        
 
         return () => abortCont.abort();
     },  [url]);

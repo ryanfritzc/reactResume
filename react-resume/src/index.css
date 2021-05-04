@@ -10,6 +10,7 @@
 @media screen and (max-width: 800px){
   .navbar{
     flex-direction: column;
+    text-align: center;
   }
   .navbar h1,p{
     padding: 5px;

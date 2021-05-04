@@ -11,9 +11,6 @@
   .navbar{
     flex-direction: column;
   }
-  .navbar p{
-    padding: 5px;
-  }
 }
 p{
   color: blue;

@@ -1,5 +1,4 @@
 import { useHistory, useParams } from "react-router-dom";
-import { blogs } from "./JsonData";
 import useFetch from './useFetch';
 
 const ProjectDetails = () => {
@@ -25,7 +24,7 @@ const ProjectDetails = () => {
                         <h2>{blog.title}</h2>
                         <p>Project: {blog.author}</p>
                         <div>{blog.body}</div>
-                        <button><a href={blog.links} target="_blank">Link to project</a></button>
+                        <button><a href={blog.links} target="_blank" rel="noreferrer">Link to project</a></button>
                         <button onClick={handleClick} hidden>Delete</button>
                 </article>
             )}

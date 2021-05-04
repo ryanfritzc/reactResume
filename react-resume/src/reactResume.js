@@ -1,5 +1,4 @@
-
-const Home = () => {
+const reactResume = () => {
     return(
         <div className="home-bio">
             <h1 className="bio-title">Ryan Fritz</h1>
@@ -96,4 +95,4 @@ const Home = () => {
     );
 }
  
-export default Home;
+export default reactResume;

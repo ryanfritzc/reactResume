@@ -5,6 +5,7 @@ import HiddenAdd from './HiddenAdd';
 import ProjectDetails from './ProjectDetails';
 import NotFound from './NotFound';
 import Projects from './Projects';
+import reactResume from './reactResume';
 
   
 function App() {
@@ -17,11 +18,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="ryanfritzc.github.io/reactResume">
-              <Home />
-            </Route>
-            <Route exact path="ryanfritzc.github.io/reactResume/">
-              <Home />
+            <Route path="/reactResume">
+              <reactResume />
             </Route>
             <Route path="/HiddenAdd">
               <HiddenAdd />

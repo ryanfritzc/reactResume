@@ -1,6 +1,5 @@
 import ProjectList from './ProjectList';
 import useFetch from './useFetch';
-import {blogs} from './JsonData';
 
 const Projects = () => {
         const {data: blogs, isPending, error} = useFetch('https://my-json-server.typicode.com/ryanfritzc/reactResume/blogs/');

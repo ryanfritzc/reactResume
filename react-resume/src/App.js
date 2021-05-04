@@ -19,7 +19,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/reactResume">
-              <reactResume />
+              <Home />
             </Route>
             <Route path="/HiddenAdd">
               <HiddenAdd />
